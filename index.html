@@ -4,134 +4,270 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ryan Zgol — Tulane University student interested in business, law, finance, research, and technology.">
+  <meta name="theme-color" content="#171917">
   <title>Ryan Zgol | Personal Portfolio</title>
-  <meta name="description" content="Ryan Zgol — Tulane University student interested in business, law, finance, and technology.">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=DM+Mono&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <header>
   <a class="logo" href="#home">RZ<span>.</span></a>
-  <nav>
+
+  <nav aria-label="Main navigation">
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
     <a href="#interests">Interests</a>
+    <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </nav>
-  <button id="theme-toggle" aria-label="Toggle dark mode">◐</button>
+
+  <button id="theme-toggle" aria-label="Switch color theme" type="button">◐</button>
 </header>
 
 <main>
+
+<!-- HERO -->
+
 <section class="hero" id="home">
+
   <div class="hero-text">
     <p class="eyebrow">TULANE UNIVERSITY · NEW ORLEANS</p>
+
     <h1>Ryan<br><em>Zgol.</em></h1>
-    <p class="intro">Curious by nature. Driven by ideas. Interested in where business, law, and technology meet.</p>
+
+    <p class="intro">
+      Curious by nature. Driven by ideas.
+      Interested in where business, law, and technology meet.
+    </p>
+
     <div class="actions">
       <a class="primary-btn" href="#experience">Explore my work ↗</a>
       <a class="secondary-btn" href="#contact">Get in touch ↗</a>
     </div>
   </div>
-  <div class="hero-art">
+
+  <div class="hero-art" aria-label="Ryan Zgol initials graphic">
     <div class="circle"><span>RZ</span></div>
     <div class="orbit"></div>
-    <p class="art-label">A WORK IN PROGRESS</p>
+    <p class="art-label">PERSONAL PORTFOLIO</p>
     <p class="art-bottom">GEORGIA → NEW ORLEANS</p>
   </div>
-  <div class="hero-footer">PERSONAL PORTFOLIO <span>SCROLL TO EXPLORE ↓</span></div>
+
+  <div class="hero-footer">
+    <span>PERSONAL PORTFOLIO</span>
+    <span>SCROLL TO EXPLORE ↓</span>
+  </div>
+
 </section>
+
+
+<!-- ABOUT -->
 
 <section class="section about" id="about">
+
   <div class="section-label">01 / ABOUT</div>
+
   <div>
     <p class="eyebrow">A LITTLE ABOUT ME</p>
-    <h2>Building a perspective<br>that goes <em>beyond the classroom.</em></h2>
+
+    <h2>
+      Building a perspective<br>
+      that goes <em>beyond the classroom.</em>
+    </h2>
+
     <div class="two-columns">
-      <p>I'm Ryan, a student at Tulane University with a broad interest in business, law, finance, and the ways technology is reshaping the world. I enjoy connecting ideas across disciplines and looking at how decisions made in organizations, markets, and institutions affect people.</p>
-      <p>My experiences have taken me from cancer research and hospital clinical rotations to customer-facing work and student leadership. I'm especially interested in opportunities that combine analytical thinking, communication, and real-world problem solving.</p>
+
+      <p>
+        I'm Ryan, a student at Tulane University with a broad
+        interest in business, law, finance, and the ways
+        technology is reshaping the world. I enjoy connecting
+        ideas across disciplines and looking at how decisions
+        made in organizations, markets, and institutions affect people.
+      </p>
+
+      <p>
+        My experiences have taken me from cancer research
+        and hospital clinical rotations to customer-facing work
+        and student leadership. I'm especially interested in
+        opportunities that combine analytical thinking,
+        communication, and real-world problem solving.
+      </p>
+
     </div>
+
     <div class="facts">
-      <div><small>CURRENTLY</small><strong>Tulane University</strong></div>
-      <div><small>BASED IN</small><strong>New Orleans, Louisiana</strong></div>
-      <div><small>FROM</small><strong>Georgia</strong></div>
+      <div>
+        <small>CURRENTLY</small>
+        <strong>Tulane University</strong>
+      </div>
+
+      <div>
+        <small>BASED IN</small>
+        <strong>New Orleans, Louisiana</strong>
+      </div>
+
+      <div>
+        <small>FROM</small>
+        <strong>Georgia</strong>
+      </div>
     </div>
+
   </div>
+
 </section>
+
+
+<!-- EXPERIENCE -->
 
 <section class="section experience" id="experience">
+
   <div class="section-label">02 / EXPERIENCE</div>
-  <div class="section-title">
-    <div>
-      <p class="eyebrow">WHAT I'VE BEEN UP TO</p>
-      <h2>Experience &<br><em>involvement.</em></h2>
+
+  <div class="experience-content">
+
+    <div class="section-title">
+
+      <div>
+        <p class="eyebrow">WHAT I'VE BEEN UP TO</p>
+
+        <h2>
+          Experience &<br>
+          <em>involvement.</em>
+        </h2>
+      </div>
+
+      <p>
+        A selection of experiences that have shaped how I think,
+        work, and collaborate.
+      </p>
+
     </div>
-    <p>A selection of experiences that have shaped how I think, work, and collaborate.</p>
+
+
+    <div class="cards">
+
+      <article class="card">
+        <small>RESEARCH · 01</small>
+        <div class="card-icon">⌁</div>
+
+        <h3>Georgia Cancer Center</h3>
+
+        <p class="role">Research Experience</p>
+
+        <p>
+          Contributed to research involving cell culturing
+          and hepatocellular carcinoma data. Participated
+          in research seminars and scientific presentations.
+        </p>
+      </article>
+
+
+      <article class="card">
+        <small>HEALTHCARE · 02</small>
+        <div class="card-icon">＋</div>
+
+        <h3>Doctors Hospital</h3>
+
+        <p class="role">Clinical Rotations</p>
+
+        <p>
+          Gained exposure to clinical environments and
+          developed familiarity with patient care through
+          hospital rotations.
+        </p>
+      </article>
+
+
+      <article class="card">
+        <small>CUSTOMER EXPERIENCE · 03</small>
+        <div class="card-icon">↗</div>
+
+        <h3>Hokkaido</h3>
+
+        <p class="role">Front-of-House Team Member</p>
+
+        <p>
+          Developed customer service, communication,
+          and teamwork skills in a fast-paced restaurant
+          environment.
+        </p>
+      </article>
+
+
+      <article class="card">
+        <small>LEADERSHIP · 04</small>
+        <div class="card-icon">✳</div>
+
+        <h3>FCCLA</h3>
+
+        <p class="role">President</p>
+
+        <p>
+          Led a student organization, supported member
+          engagement, and helped coordinate activities
+          and initiatives.
+        </p>
+      </article>
+
+
+      <article class="card">
+        <small>COMMUNITY · 05</small>
+        <div class="card-icon">♡</div>
+
+        <h3>Dine for a Difference</h3>
+
+        <p class="role">Head Coordinator</p>
+
+        <p>
+          Helped coordinate a community-focused initiative,
+          bringing people together around service and
+          fundraising.
+        </p>
+      </article>
+
+
+      <article class="card">
+        <small>STEM LEADERSHIP · 06</small>
+        <div class="card-icon">⌘</div>
+
+        <h3>Science Olympiad</h3>
+
+        <p class="role">President</p>
+
+        <p>
+          Supported a student STEM organization and
+          helped lead team participation, collaboration,
+          and preparation.
+        </p>
+      </article>
+
+    </div>
+
   </div>
 
-  <div class="cards">
-    <article class="card">
-      <small>RESEARCH · 01</small>
-      <div class="card-icon">⌁</div>
-      <h3>Georgia Cancer Center</h3>
-      <p class="role">Research Experience</p>
-      <p>Contributed to research involving cell culturing and hepatocellular carcinoma data. Participated in research seminars and scientific presentations.</p>
-      <small>ADD DATES</small>
-    </article>
-
-    <article class="card">
-      <small>HEALTHCARE · 02</small>
-      <div class="card-icon">＋</div>
-      <h3>Doctors Hospital</h3>
-      <p class="role">Clinical Rotations</p>
-      <p>Gained exposure to clinical environments and developed familiarity with patient care through hospital rotations.</p>
-      <small>ADD DATES</small>
-    </article>
-
-    <article class="card">
-      <small>CUSTOMER EXPERIENCE · 03</small>
-      <div class="card-icon">↗</div>
-      <h3>Hokkaido</h3>
-      <p class="role">Front-of-House Team Member</p>
-      <p>Developed customer service, communication, and teamwork skills in a fast-paced restaurant environment.</p>
-      <small>ADD DATES</small>
-    </article>
-
-    <article class="card">
-      <small>LEADERSHIP · 04</small>
-      <div class="card-icon">✳</div>
-      <h3>FCCLA</h3>
-      <p class="role">President</p>
-      <p>Led a student organization, supported member engagement, and helped coordinate activities and initiatives.</p>
-      <small>ADD DATES</small>
-    </article>
-
-    <article class="card">
-      <small>COMMUNITY · 05</small>
-      <div class="card-icon">♡</div>
-      <h3>Dine for a Difference</h3>
-      <p class="role">Head Coordinator</p>
-      <p>Helped coordinate a community-focused initiative, bringing people together around service and fundraising.</p>
-      <small>ADD DATES</small>
-    </article>
-
-    <article class="card">
-      <small>STEM LEADERSHIP · 06</small>
-      <div class="card-icon">⌘</div>
-      <h3>Science Olympiad</h3>
-      <p class="role">President</p>
-      <p>Supported a student STEM organization and helped lead team participation and preparation.</p>
-      <small>ADD DATES</small>
-    </article>
-  </div>
-  <p class="note">Update role descriptions and dates to match your latest resume.</p>
 </section>
 
+
+<!-- INTERESTS -->
+
 <section class="interests" id="interests">
+
   <div class="section-label">03 / INTERESTS</div>
+
   <p class="eyebrow">ALWAYS LEARNING</p>
-  <h2>Different fields.<br><em>Connected questions.</em></h2>
+
+  <h2>
+    Different fields.<br>
+    <em>Connected questions.</em>
+  </h2>
+
   <div class="tags">
     <span>Business & Strategy</span>
     <span>Law & Public Policy</span>
@@ -142,14 +278,27 @@
     <span>Culture & Travel</span>
     <span>Technology</span>
   </div>
+
 </section>
 
+
+<!-- SKILLS -->
+
 <section class="section skills" id="skills">
+
   <div class="section-label">04 / SKILLS</div>
+
   <div>
+
     <p class="eyebrow">TOOLS & FOUNDATIONS</p>
-    <h2>Skills I bring<br><em>to the table.</em></h2>
+
+    <h2>
+      Skills I bring<br>
+      <em>to the table.</em>
+    </h2>
+
     <h3>Software & Productivity</h3>
+
     <div class="tags">
       <span>Microsoft Excel</span>
       <span>Microsoft Word</span>
@@ -157,40 +306,80 @@
       <span>Google Workspace</span>
       <span>Canva</span>
     </div>
+
     <h3>Certifications</h3>
+
     <div class="tags">
       <span>Certified Clinical Medical Assistant</span>
       <span>CPR / BLS</span>
     </div>
+
     <h3>Areas of Experience</h3>
+
     <div class="tags">
       <span>Research Support</span>
       <span>Customer Service</span>
       <span>Team Collaboration</span>
       <span>Student Leadership</span>
-      <span>Clinical Exposure</span>
+      <span>Clinical Experience</span>
     </div>
-    <p class="note">Personalize these skills and certifications to reflect your current qualifications.</p>
+
   </div>
+
 </section>
 
+
+<!-- CONTACT -->
+
 <section class="contact" id="contact">
+
   <div class="section-label">05 / CONTACT</div>
+
   <p class="eyebrow">LET'S CONNECT</p>
-  <h2>Good conversations<br>start <em>somewhere.</em></h2>
-  <p class="contact-intro">Interested in connecting, collaborating, or discussing an opportunity? I'd love to hear from you.</p>
+
+  <h2>
+    Good conversations<br>
+    start <em>somewhere.</em>
+  </h2>
+
+  <p class="contact-intro">
+    Interested in connecting, collaborating, or discussing
+    an opportunity? I'd love to hear from you.
+  </p>
+
   <div class="contact-links">
-    <div><small>EMAIL</small><a href="mailto:rzgol@tulane.edu">rzgol@tulane.edu ↗</a></div>
-    <div><small>LINKEDIN</small><a href="https://www.linkedin.com/in/ryan-zgol-1419a1293/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a></div>
+
+    <div>
+      <small>EMAIL</small>
+      <a href="mailto:rzgol@tulane.edu">
+        rzgol@tulane.edu ↗
+      </a>
+    </div>
+
+    <div>
+      <small>LINKEDIN</small>
+      <a
+        href="https://www.linkedin.com/in/ryan-zgol-1419a1293/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Connect on LinkedIn ↗
+      </a>
+    </div>
+
   </div>
+
   <footer>
     <a class="logo" href="#home">RZ<span>.</span></a>
     <span>DESIGNED WITH CURIOSITY.</span>
     <span>© <span id="year"></span> RYAN ZGOL</span>
   </footer>
+
 </section>
+
 </main>
 
 <script src="script.js"></script>
+
 </body>
 </html>
