@@ -2,27 +2,45 @@
 const toggle = document.getElementById("theme-toggle");
 const root = document.documentElement;
 
-// Remember visitor preference or use their system setting.
-const savedTheme = localStorage.getItem("ryan-theme");
-const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+const storageKey = "ryan-theme";
+
+// Use saved preference or the visitor's system preference.
+let savedTheme = null;
+
+try {
+  savedTheme = localStorage.getItem(storageKey);
+} catch (error) {
+  savedTheme = null;
+}
+
+const systemDark = window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches;
 
 root.dataset.theme = savedTheme || (systemDark ? "dark" : "light");
 
 function updateButton() {
-  toggle.textContent = root.dataset.theme === "dark" ? "☀" : "◐";
+  const darkMode = root.dataset.theme === "dark";
+
+  toggle.textContent = darkMode ? "☀" : "◐";
+
   toggle.setAttribute(
     "aria-label",
-    root.dataset.theme === "dark"
-      ? "Switch to light mode"
-      : "Switch to dark mode"
+    darkMode ? "Switch to light mode" : "Switch to dark mode"
   );
+
+  toggle.setAttribute("aria-pressed", String(darkMode));
 }
 
 toggle.addEventListener("click", () => {
   root.dataset.theme =
     root.dataset.theme === "dark" ? "light" : "dark";
 
-  localStorage.setItem("ryan-theme", root.dataset.theme);
+  try {
+    localStorage.setItem(storageKey, root.dataset.theme);
+  } catch (error) {
+    // Theme switching still works if storage is unavailable.
+  }
+
   updateButton();
 });
 
